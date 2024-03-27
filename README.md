@@ -1,5 +1,5 @@
 # Equal[iseR]
-<<<<<<< HEAD
+
 ## Introduction
 Equal[iseR] is a frequency-domain solver for non-smooth systems of ODE/DAE targetting the vibration analysis of structural mechanical systems subject to unilateral and frictional contact occurrences. It is an adaptation of the well-known Harmonic Balance Method. It relies on [Equal]ity-based versions of the governing equations solved in a weighted [Resi]dual sense.
 
@@ -23,7 +23,3 @@ The project comes with two versions of the solution procedure
 
 ## Authors
 They are listed in the licence.
-
-
-=======
->>>>>>> 4e4e7ff994015b82cd53eca7f6bfc42d8986eda4

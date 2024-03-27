@@ -1,1 +1,1 @@
-# EqualISER
+# Equal[iseR]

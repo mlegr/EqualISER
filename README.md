@@ -8,7 +8,7 @@ Unilateral contact and friction commonly take the form of differential inclusion
 ## Supporting paper
 The paper [A compact, equality-based weighted residual formulation for periodic solutions of systems undergoing frictional occurrences](https://doi.org/10.25518/2684-6500.190) (see also the version available on HAL: [hal-04189699](https://hal.science/hal-04189699)) introduces the methodology and attentant equations.
 
-### History
+## History
 2024.03.27 first public release (version 1.0)
 
 ### Version 1.0

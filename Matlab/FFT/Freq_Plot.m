@@ -5,14 +5,14 @@
 % Date: March 22, 2024
 
 clear
-close all
+%close all
 
 % Delta of the forcing frequency omega
-delta_w = 0.01;
+delta_w = 0.001;
 
 % Omega range for the frequency plot
 omega_ini = 0.1;
-omega_final = 4;
+omega_final = 0.8;
 
 % Loads the mechanical parameters of the system
 run("../parameters")
@@ -40,8 +40,8 @@ for omega = omega_ini:delta_w:omega_final
     Ec1 = 0; % mass 1
     Ec2 = 0; % mass 2
     for k = 1:Nphi
-        Ec1 = Ec1 + (2*k-1)^2*(x1(2*k-1)^2+x1(2*k)^2);
-        Ec2 = Ec2 + (2*k-1)^2*(x2(2*k-1)^2+x2(2*k)^2);
+        Ec1 = Ec1 + omega^2*(2*k-1)^2*(x1(2*k-1)^2+x1(2*k)^2);
+        Ec2 = Ec2 + omega^2*(2*k-1)^2*(x2(2*k-1)^2+x2(2*k)^2);
     end
     Ec1 = m1/4*Ec1;
     Ec2 = m2/4*Ec2;
@@ -62,7 +62,7 @@ for omega = omega_ini:delta_w:omega_final
     energy(kk,1) = Ec1 + Ec2 + Ep1 + Ep2;
 end
 
-figure
+%figure
 hold on
 plot((omega_ini:delta_w:omega_final), energy);
 set(gca, 'YScale', 'log');

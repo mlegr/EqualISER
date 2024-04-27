@@ -8,7 +8,7 @@ m2 = 1; k2 = 1;
 d1 = 0.02; d2 = 0.02;% Visvcous damping
 
 % Friction 
-mu = 0.9; N = 9;
+mu = 0.9; N = 8;
 
 % External forces
 f1 = 20; % force magnitude on dof 1
